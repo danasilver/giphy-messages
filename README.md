@@ -38,3 +38,14 @@ We distribute an app since it's the easiest way to make sure we can find
 The app is build using [Platypus](http://www.sveinbjorn.org/platypus) with the
 profile *Giphy Messages.platypus*. You'll need to change the paths to reference
 your own installation to build locally.
+
+The dmg is generated with [create-dmg](https://github.com/andreyvit/create-dmg).
+Follow the installation instructions there then run `sh dmg.sh` to create
+*Giphy Messages.dmg*.
+
+The multi-resolution *dmg-background.tiff* for the background of the dmg is
+generated with:
+
+```
+tiffutil -cathidpicheck assets/dmg-background.png assets/dmg-background@2x.png -out assets/dmg-background.tiff
+```
