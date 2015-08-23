@@ -6,7 +6,9 @@ using terms from application "Messages"
 			try
 				set theQuotedMessage to quoted form of theMessage
 				set theQuotedChatId to quoted form of theChatId
-				do shell script "python /Users/dsilver/Documents/workspace/giphy-messages/giphy.py " & theQuotedMessage & " " & theQuotedChatId & " &>/dev/null &"
+				set theScript to "/Applications/Giphy\\ Messages.app/Contents/Resources/giphy.py"
+
+				do shell script "python " & theScript & " " & theQuotedMessage & " " & theQuotedChatId & " &>/dev/null &"
 			on error err
 			end try
 		end if

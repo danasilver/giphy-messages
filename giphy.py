@@ -30,7 +30,7 @@ data = json.load(response)
 maximum = data['pagination']['count'] - 1
 
 if maximum == -1:
-    command = ['osascript', send_message_path, 'message', chat,
+    command = ['osascript', '{0}'.format(send_message_path), 'message', chat,
                'No gifs found for: {0}'.format(message)]
     subprocess.call(command, shell=False)
     sys.exit("No gifs found for %s!" % message)
@@ -46,8 +46,7 @@ if not os.path.exists(gifs_path):
 local_gif_path = os.path.join(gifs_path, '.'.join((gif_id, gif_type)))
 urllib.urlretrieve(image, local_gif_path)
 
-command = 'osascript {0} attachment {1} {2}'.format(send_message_path,
-                                                    chat,
-                                                    local_gif_path)
-subprocess.call(command.split(), shell=False)
+command = ['/usr/bin/osascript', '{0}'.format(send_message_path), 'attachment', chat, local_gif_path]
+print command
+subprocess.call(command, shell=False)
 sys.exit(0)
