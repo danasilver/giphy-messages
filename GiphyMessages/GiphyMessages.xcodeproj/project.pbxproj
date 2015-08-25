@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F98D14D51B8AABC800F768AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F98D14D41B8AABC800F768AF /* AppDelegate.m */; };
+		F98D14D71B8AABC800F768AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F98D14D61B8AABC800F768AF /* main.m */; };
+		F98D14D91B8AABC800F768AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98D14D81B8AABC800F768AF /* Images.xcassets */; };
+		F98D14DC1B8AABC800F768AF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98D14DA1B8AABC800F768AF /* MainMenu.xib */; };
+		F98D14E81B8AABC800F768AF /* GiphyMessagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F98D14E71B8AABC800F768AF /* GiphyMessagesTests.m */; };
+		F98D14F41B8AAD2800F768AF /* GiphyMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98D14F21B8AAD2800F768AF /* GiphyMessagesViewController.m */; };
+		F98D14F51B8AAD2800F768AF /* GiphyMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98D14F31B8AAD2800F768AF /* GiphyMessagesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F98D14E21B8AABC800F768AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F98D14C61B8AABC700F768AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F98D14CD1B8AABC700F768AF;
+			remoteInfo = GiphyMessages;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F98D14CE1B8AABC800F768AF /* GiphyMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98D14D21B8AABC800F768AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98D14D31B8AABC800F768AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F98D14D41B8AABC800F768AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F98D14D61B8AABC800F768AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F98D14D81B8AABC800F768AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F98D14DB1B8AABC800F768AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F98D14E11B8AABC800F768AF /* GiphyMessagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiphyMessagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98D14E61B8AABC800F768AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98D14E71B8AABC800F768AF /* GiphyMessagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiphyMessagesTests.m; sourceTree = "<group>"; };
+		F98D14F11B8AAD2800F768AF /* GiphyMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiphyMessagesViewController.h; sourceTree = "<group>"; };
+		F98D14F21B8AAD2800F768AF /* GiphyMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiphyMessagesViewController.m; sourceTree = "<group>"; };
+		F98D14F31B8AAD2800F768AF /* GiphyMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiphyMessagesViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F98D14CB1B8AABC700F768AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98D14DE1B8AABC800F768AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F98D14C51B8AABC700F768AF = {
+			isa = PBXGroup;
+			children = (
+				F98D14D01B8AABC800F768AF /* GiphyMessages */,
+				F98D14E41B8AABC800F768AF /* GiphyMessagesTests */,
+				F98D14CF1B8AABC800F768AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F98D14CF1B8AABC800F768AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F98D14CE1B8AABC800F768AF /* GiphyMessages.app */,
+				F98D14E11B8AABC800F768AF /* GiphyMessagesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F98D14D01B8AABC800F768AF /* GiphyMessages */ = {
+			isa = PBXGroup;
+			children = (
+				F98D14D31B8AABC800F768AF /* AppDelegate.h */,
+				F98D14D41B8AABC800F768AF /* AppDelegate.m */,
+				F98D14D81B8AABC800F768AF /* Images.xcassets */,
+				F98D14DA1B8AABC800F768AF /* MainMenu.xib */,
+				F98D14F11B8AAD2800F768AF /* GiphyMessagesViewController.h */,
+				F98D14F21B8AAD2800F768AF /* GiphyMessagesViewController.m */,
+				F98D14F31B8AAD2800F768AF /* GiphyMessagesViewController.xib */,
+				F98D14D11B8AABC800F768AF /* Supporting Files */,
+			);
+			path = GiphyMessages;
+			sourceTree = "<group>";
+		};
+		F98D14D11B8AABC800F768AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F98D14D21B8AABC800F768AF /* Info.plist */,
+				F98D14D61B8AABC800F768AF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F98D14E41B8AABC800F768AF /* GiphyMessagesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F98D14E71B8AABC800F768AF /* GiphyMessagesTests.m */,
+				F98D14E51B8AABC800F768AF /* Supporting Files */,
+			);
+			path = GiphyMessagesTests;
+			sourceTree = "<group>";
+		};
+		F98D14E51B8AABC800F768AF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F98D14E61B8AABC800F768AF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F98D14CD1B8AABC700F768AF /* GiphyMessages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98D14EB1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessages" */;
+			buildPhases = (
+				F98D14CA1B8AABC700F768AF /* Sources */,
+				F98D14CB1B8AABC700F768AF /* Frameworks */,
+				F98D14CC1B8AABC700F768AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiphyMessages;
+			productName = GiphyMessages;
+			productReference = F98D14CE1B8AABC800F768AF /* GiphyMessages.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F98D14E01B8AABC800F768AF /* GiphyMessagesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F98D14EE1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessagesTests" */;
+			buildPhases = (
+				F98D14DD1B8AABC800F768AF /* Sources */,
+				F98D14DE1B8AABC800F768AF /* Frameworks */,
+				F98D14DF1B8AABC800F768AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F98D14E31B8AABC800F768AF /* PBXTargetDependency */,
+			);
+			name = GiphyMessagesTests;
+			productName = GiphyMessagesTests;
+			productReference = F98D14E11B8AABC800F768AF /* GiphyMessagesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F98D14C61B8AABC700F768AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Dana Silver";
+				TargetAttributes = {
+					F98D14CD1B8AABC700F768AF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F98D14E01B8AABC800F768AF = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F98D14CD1B8AABC700F768AF;
+					};
+				};
+			};
+			buildConfigurationList = F98D14C91B8AABC700F768AF /* Build configuration list for PBXProject "GiphyMessages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F98D14C51B8AABC700F768AF;
+			productRefGroup = F98D14CF1B8AABC800F768AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F98D14CD1B8AABC700F768AF /* GiphyMessages */,
+				F98D14E01B8AABC800F768AF /* GiphyMessagesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F98D14CC1B8AABC700F768AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98D14D91B8AABC800F768AF /* Images.xcassets in Resources */,
+				F98D14F51B8AAD2800F768AF /* GiphyMessagesViewController.xib in Resources */,
+				F98D14DC1B8AABC800F768AF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98D14DF1B8AABC800F768AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F98D14CA1B8AABC700F768AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98D14F41B8AAD2800F768AF /* GiphyMessagesViewController.m in Sources */,
+				F98D14D71B8AABC800F768AF /* main.m in Sources */,
+				F98D14D51B8AABC800F768AF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F98D14DD1B8AABC800F768AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98D14E81B8AABC800F768AF /* GiphyMessagesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F98D14E31B8AABC800F768AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F98D14CD1B8AABC700F768AF /* GiphyMessages */;
+			targetProxy = F98D14E21B8AABC800F768AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F98D14DA1B8AABC800F768AF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F98D14DB1B8AABC800F768AF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F98D14E91B8AABC800F768AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F98D14EA1B8AABC800F768AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F98D14EC1B8AABC800F768AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GiphyMessages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F98D14ED1B8AABC800F768AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GiphyMessages/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F98D14EF1B8AABC800F768AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GiphyMessagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphyMessages.app/Contents/MacOS/GiphyMessages";
+			};
+			name = Debug;
+		};
+		F98D14F01B8AABC800F768AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GiphyMessagesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphyMessages.app/Contents/MacOS/GiphyMessages";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F98D14C91B8AABC700F768AF /* Build configuration list for PBXProject "GiphyMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98D14E91B8AABC800F768AF /* Debug */,
+				F98D14EA1B8AABC800F768AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F98D14EB1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98D14EC1B8AABC800F768AF /* Debug */,
+				F98D14ED1B8AABC800F768AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F98D14EE1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessagesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F98D14EF1B8AABC800F768AF /* Debug */,
+				F98D14F01B8AABC800F768AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F98D14C61B8AABC700F768AF /* Project object */;
+}

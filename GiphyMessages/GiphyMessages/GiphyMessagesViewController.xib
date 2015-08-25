@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7706"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GiphyMessagesViewController">
+            <connections>
+                <outlet property="headerImageView" destination="sRz-7I-D2I" id="vNx-U1-NkF"/>
+                <outlet property="installActionMessage" destination="Xy5-PH-JIY" id="hx8-P7-PFh"/>
+                <outlet property="preferencesImageView" destination="sjz-zq-aWf" id="ek8-8l-b0i"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="660" height="800"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRz-7I-D2I">
+                    <rect key="frame" x="306" y="685" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="q9J-PW-uZp"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xy5-PH-JIY">
+                    <rect key="frame" x="234" y="635" width="193" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Install Action Message" allowsEditingTextAttributes="YES" id="3BA-eA-JLW">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-YW-DBJ">
+                    <rect key="frame" x="289" y="599" width="82" height="32"/>
+                    <buttonCell key="cell" type="push" title="Open Messages" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d1o-AN-yEa">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="openMessages:" target="-2" id="VIf-i1-4Rc"/>
+                    </connections>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-zq-aWf">
+                    <rect key="frame" x="306" y="376" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="AhI-LG-8d6"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="sRz-7I-D2I" secondAttribute="centerX" id="2IJ-p7-mHO"/>
+                <constraint firstItem="sjz-zq-aWf" firstAttribute="top" secondItem="tdi-YW-DBJ" secondAttribute="bottom" constant="-13" id="2gm-xv-D1S"/>
+                <constraint firstAttribute="centerX" secondItem="tdi-YW-DBJ" secondAttribute="centerX" id="AOn-LN-WNL"/>
+                <constraint firstItem="sRz-7I-D2I" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="NTb-8V-ebD"/>
+                <constraint firstItem="Xy5-PH-JIY" firstAttribute="top" secondItem="sRz-7I-D2I" secondAttribute="bottom" constant="15" id="fab-ft-Yym"/>
+                <constraint firstAttribute="centerX" secondItem="Xy5-PH-JIY" secondAttribute="centerX" id="g33-Ng-5e1"/>
+                <constraint firstItem="tdi-YW-DBJ" firstAttribute="top" secondItem="Xy5-PH-JIY" secondAttribute="bottom" constant="15" id="jE4-R1-ekX"/>
+                <constraint firstAttribute="centerX" secondItem="sjz-zq-aWf" secondAttribute="centerX" id="wcF-T6-w7A"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
