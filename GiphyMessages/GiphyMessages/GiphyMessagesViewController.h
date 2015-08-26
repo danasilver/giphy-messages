@@ -11,6 +11,7 @@
 #define GiphyMessagesInstallActionMessages @"To finish installing, select Giphy.applescript as the AppleScript handler in Messages Preferences."
 #define GiphyMessagesAuthorButtonTitle @"By @DanaRSilver"
 #define GiphyMessagesAuthorButtonLink @"https://twitter.com/DanaRSilver"
+#define GiphyMessagesVersionFormat @"Version %@ (%@)"
 #define GiphyMessagesHandlerName @"Giphy.applescript"
 #define GiphyMessagesHandlerInstallLocationFormat @"%@/Library/Application Scripts/com.apple.iChat/%@"
 

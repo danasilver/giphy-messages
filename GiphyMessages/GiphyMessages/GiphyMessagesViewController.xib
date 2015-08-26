@@ -10,6 +10,7 @@
                 <outlet property="headerImageView" destination="sRz-7I-D2I" id="vNx-U1-NkF"/>
                 <outlet property="installActionMessage" destination="Xy5-PH-JIY" id="hx8-P7-PFh"/>
                 <outlet property="preferencesImageView" destination="sjz-zq-aWf" id="ek8-8l-b0i"/>
+                <outlet property="versionText" destination="c9K-Hd-GKG" id="MtM-QI-MS3"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -37,7 +38,7 @@
                 </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-Hd-GKG">
                     <rect key="frame" x="18" y="20" width="84" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.0.0" id="9cD-XE-SzQ">
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version" id="9cD-XE-SzQ">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>

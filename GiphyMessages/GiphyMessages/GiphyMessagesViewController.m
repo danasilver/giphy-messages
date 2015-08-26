@@ -13,6 +13,7 @@
 @property (weak) IBOutlet NSTextField *installActionMessage;
 @property (weak) IBOutlet NSImageView *preferencesImageView;
 @property (weak) IBOutlet NSImageView *headerImageView;
+@property (weak) IBOutlet NSTextField *versionText;
 @property (weak) IBOutlet NSButton *authorButton;
 
 @end
@@ -33,6 +34,8 @@
     [self.authorButton setTitle:GiphyMessagesAuthorButtonTitle];
     [self.authorButton setBordered:NO];
     
+    [self.versionText setStringValue:[NSString stringWithFormat:GiphyMessagesVersionFormat, [self readBundleVersionFromPlist], [self readBuildVersionFromPlist], nil]];
+    
     [self copyGiphyMessagesAppleScriptHandler];
 }
 
@@ -47,21 +50,25 @@
 
 - (BOOL)copyGiphyMessagesAppleScriptHandler {
     NSString *handlerPath = [[NSBundle mainBundle] pathForResource:@"Giphy" ofType:@"applescript"];
+    NSData *handlerData = [NSData dataWithContentsOfFile:handlerPath];
+    NSString *handlerInstallPath = [NSString stringWithFormat:GiphyMessagesHandlerInstallLocationFormat, NSHomeDirectory(), GiphyMessagesHandlerName, nil];
     
-    if ([[NSFileManager defaultManager] isReadableFileAtPath:handlerPath]) {
-        NSString *handlerInstallPath = [NSString stringWithFormat:GiphyMessagesHandlerInstallLocationFormat, NSHomeDirectory(), GiphyMessagesHandlerName, nil];
-        
-        NSError *error = nil;
-        [[NSFileManager defaultManager] copyItemAtPath:handlerPath toPath:handlerInstallPath error:&error];
-        
-        if (error) {
-            return NO;
-        }
-        
+    if ([handlerData writeToFile:handlerInstallPath atomically:YES]) {
         return YES;
+    } else {
+        return NO;
     }
-
-    return NO;
 }
+
+- (NSString *)readBundleVersionFromPlist {
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+    return [infoDict objectForKey:@"CFBundleShortVersionString"];
+}
+
+- (NSString *)readBuildVersionFromPlist {
+    NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
+    return [infoDict objectForKey:@"CFBundleVersion"];
+}
+
 
 @end
