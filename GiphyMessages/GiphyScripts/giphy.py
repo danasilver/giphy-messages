@@ -29,7 +29,7 @@ if len(argv) != 3:
 
 chat = argv[2]
 
-message = re.sub('^gif me ', '', argv[1]).strip()
+message = re.sub('^(gif me|giphy) ', '', argv[1]).strip()
 url = 'http://api.giphy.com/v1/gifs/search?q=%s&limit=5&api_key=dc6zaTOxFJmzC'
 
 response = urllib2.urlopen(url % message.replace(" ", "+"))
