@@ -1,3 +1,14 @@
+--
+-- send_message.applescript
+-- Sends a message or attachment via Messages.app
+--
+-- Usage: osascript send_message.applescript type chatId message
+--     type is "message" or "attachment"
+--     message is a text message to send or the path to an attachment
+--
+-- Copyright (c) 2015 Dana Silver. All rights reserved.
+--
+
 on run argv
 
 	set theType to item 1 of argv

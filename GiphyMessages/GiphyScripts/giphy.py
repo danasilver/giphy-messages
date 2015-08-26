@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+#
+# giphy.py
+# Retrieves and sends a gif corresponding to a message.
+#
+# Usage: python giphy.py message service
+#
+# Copyright (c) 2015 Dana Silver. All rights reserved.
+#
+
 import sys
 import os
 import re
@@ -8,7 +17,6 @@ import urllib2
 import json
 import random
 import subprocess
-import logging
 
 directory = os.path.dirname(os.path.abspath(__file__))
 send_message_path = os.path.join(directory, 'send_message.applescript')

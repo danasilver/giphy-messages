@@ -1,3 +1,12 @@
+--
+-- Giphy.applescript
+-- AppleScript Handler for Messages.app
+-- Handles sent messages starting with "gif me" or "giphy" and sends
+-- them to giphy.py to fetch a corresponding gif
+--
+-- Copyright (c) 2015 Dana Silver. All rights reserved.
+--
+
 using terms from application "Messages"
 	on message sent theMessage for theChat with theText
 		set theChatId to (get id of theChat)
