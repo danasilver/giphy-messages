@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GiphyMessagesViewController">
             <connections>
+                <outlet property="authorButton" destination="H5p-b0-Rsg" id="m4q-UG-S1a"/>
                 <outlet property="headerImageView" destination="sRz-7I-D2I" id="vNx-U1-NkF"/>
                 <outlet property="installActionMessage" destination="Xy5-PH-JIY" id="hx8-P7-PFh"/>
                 <outlet property="preferencesImageView" destination="sjz-zq-aWf" id="ek8-8l-b0i"/>
@@ -30,8 +31,20 @@
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-zq-aWf">
+                    <rect key="frame" x="306" y="376" width="48" height="48"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="AhI-LG-8d6"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c9K-Hd-GKG">
+                    <rect key="frame" x="18" y="20" width="84" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Version 1.0.0" id="9cD-XE-SzQ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
                 <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdi-YW-DBJ">
-                    <rect key="frame" x="289" y="599" width="82" height="32"/>
+                    <rect key="frame" x="260" y="588" width="140" height="32"/>
                     <buttonCell key="cell" type="push" title="Open Messages" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="d1o-AN-yEa">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -40,21 +53,40 @@
                         <action selector="openMessages:" target="-2" id="VIf-i1-4Rc"/>
                     </connections>
                 </button>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-zq-aWf">
-                    <rect key="frame" x="306" y="376" width="48" height="48"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="AhI-LG-8d6"/>
-                </imageView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5p-b0-Rsg">
+                    <rect key="frame" x="545" y="-7" width="111" height="32"/>
+                    <buttonCell key="cell" type="push" title="Author Link" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Z8Q-kl-ZzG">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="authorButtonWasPressed:" target="-2" id="B2O-9C-Zjw"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="H5p-b0-Rsg" secondAttribute="trailing" constant="10" id="0WE-xP-970"/>
                 <constraint firstAttribute="centerX" secondItem="sRz-7I-D2I" secondAttribute="centerX" id="2IJ-p7-mHO"/>
                 <constraint firstItem="sjz-zq-aWf" firstAttribute="top" secondItem="tdi-YW-DBJ" secondAttribute="bottom" constant="-13" id="2gm-xv-D1S"/>
                 <constraint firstAttribute="centerX" secondItem="tdi-YW-DBJ" secondAttribute="centerX" id="AOn-LN-WNL"/>
+                <constraint firstItem="c9K-Hd-GKG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="L7U-sI-qzG"/>
                 <constraint firstItem="sRz-7I-D2I" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="NTb-8V-ebD"/>
                 <constraint firstItem="Xy5-PH-JIY" firstAttribute="top" secondItem="sRz-7I-D2I" secondAttribute="bottom" constant="15" id="fab-ft-Yym"/>
                 <constraint firstAttribute="centerX" secondItem="Xy5-PH-JIY" secondAttribute="centerX" id="g33-Ng-5e1"/>
                 <constraint firstItem="tdi-YW-DBJ" firstAttribute="top" secondItem="Xy5-PH-JIY" secondAttribute="bottom" constant="15" id="jE4-R1-ekX"/>
+                <constraint firstAttribute="bottom" secondItem="H5p-b0-Rsg" secondAttribute="bottom" id="q2T-ZE-Vhj"/>
+                <constraint firstAttribute="bottom" secondItem="c9K-Hd-GKG" secondAttribute="bottom" constant="7" id="sGf-ZH-FNR"/>
                 <constraint firstAttribute="centerX" secondItem="sjz-zq-aWf" secondAttribute="centerX" id="wcF-T6-w7A"/>
             </constraints>
         </customView>
+        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="oTK-KY-mXl">
+            <rect key="frame" x="0.0" y="0.0" width="38" height="17"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="aSy-gl-LI2">
+                <font key="font" metaFont="system"/>
+                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+            </textFieldCell>
+        </textField>
     </objects>
 </document>

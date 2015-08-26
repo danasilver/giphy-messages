@@ -14,6 +14,9 @@
 		F98D14E81B8AABC800F768AF /* GiphyMessagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F98D14E71B8AABC800F768AF /* GiphyMessagesTests.m */; };
 		F98D14F41B8AAD2800F768AF /* GiphyMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98D14F21B8AAD2800F768AF /* GiphyMessagesViewController.m */; };
 		F98D14F51B8AAD2800F768AF /* GiphyMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F98D14F31B8AAD2800F768AF /* GiphyMessagesViewController.xib */; };
+		F9A07FFA1B8D497D0035E20C /* giphy.py in Resources */ = {isa = PBXBuildFile; fileRef = F9A07FF01B8D485A0035E20C /* giphy.py */; };
+		F9A07FFB1B8D497D0035E20C /* Giphy.applescript in Resources */ = {isa = PBXBuildFile; fileRef = F9A07FEF1B8D485A0035E20C /* Giphy.applescript */; };
+		F9A07FFC1B8D497D0035E20C /* send_message.applescript in Resources */ = {isa = PBXBuildFile; fileRef = F9A07FF11B8D485A0035E20C /* send_message.applescript */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		F98D14F11B8AAD2800F768AF /* GiphyMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiphyMessagesViewController.h; sourceTree = "<group>"; };
 		F98D14F21B8AAD2800F768AF /* GiphyMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiphyMessagesViewController.m; sourceTree = "<group>"; };
 		F98D14F31B8AAD2800F768AF /* GiphyMessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GiphyMessagesViewController.xib; sourceTree = "<group>"; };
+		F9A07FEF1B8D485A0035E20C /* Giphy.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; name = Giphy.applescript; path = GiphyScripts/Giphy.applescript; sourceTree = "<group>"; };
+		F9A07FF01B8D485A0035E20C /* giphy.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = giphy.py; path = GiphyScripts/giphy.py; sourceTree = "<group>"; };
+		F9A07FF11B8D485A0035E20C /* send_message.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; name = send_message.applescript; path = GiphyScripts/send_message.applescript; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F98D14D01B8AABC800F768AF /* GiphyMessages */,
+				F9A07FF51B8D48640035E20C /* GiphyScripts */,
 				F98D14E41B8AABC800F768AF /* GiphyMessagesTests */,
 				F98D14CF1B8AABC800F768AF /* Products */,
 			);
@@ -117,6 +124,16 @@
 				F98D14E61B8AABC800F768AF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F9A07FF51B8D48640035E20C /* GiphyScripts */ = {
+			isa = PBXGroup;
+			children = (
+				F9A07FF01B8D485A0035E20C /* giphy.py */,
+				F9A07FEF1B8D485A0035E20C /* Giphy.applescript */,
+				F9A07FF11B8D485A0035E20C /* send_message.applescript */,
+			);
+			name = GiphyScripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A07FFA1B8D497D0035E20C /* giphy.py in Resources */,
+				F9A07FFB1B8D497D0035E20C /* Giphy.applescript in Resources */,
+				F9A07FFC1B8D497D0035E20C /* send_message.applescript in Resources */,
 				F98D14D91B8AABC800F768AF /* Images.xcassets in Resources */,
 				F98D14F51B8AAD2800F768AF /* GiphyMessagesViewController.xib in Resources */,
 				F98D14DC1B8AABC800F768AF /* MainMenu.xib in Resources */,
@@ -411,6 +431,7 @@
 				F98D14ED1B8AABC800F768AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F98D14EE1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessagesTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +440,7 @@
 				F98D14F01B8AABC800F768AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

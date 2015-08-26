@@ -407,11 +407,11 @@
         <window title="GiphyMessages" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="444" y="-23" width="640" height="900"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="contentRect" x="444" y="-23" width="640" height="665"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
             <value key="maxSize" type="size" width="640" height="900"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="640" height="900"/>
+                <rect key="frame" x="0.0" y="0.0" width="640" height="665"/>
                 <autoresizingMask key="autoresizingMask"/>
             </view>
             <contentBorderThickness minY="0.0"/>
