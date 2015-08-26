@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F98D14E21B8AABC800F768AF /* PBXContainerItemProxy */ = {
+		F9A080011B8D835B0035E20C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F98D14C61B8AABC700F768AF /* Project object */;
 			proxyType = 1;
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F98D14CE1B8AABC800F768AF /* GiphyMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98D14CE1B8AABC800F768AF /* GiphyMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giphy Messages.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98D14D21B8AABC800F768AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F98D14D31B8AABC800F768AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F98D14D41B8AABC800F768AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F98D14CD1B8AABC700F768AF /* GiphyMessages */ = {
+		F98D14CD1B8AABC700F768AF /* Giphy Messages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F98D14EB1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessages" */;
+			buildConfigurationList = F98D14EB1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "Giphy Messages" */;
 			buildPhases = (
 				F98D14CA1B8AABC700F768AF /* Sources */,
 				F98D14CB1B8AABC700F768AF /* Frameworks */,
@@ -151,7 +151,7 @@
 			);
 			dependencies = (
 			);
-			name = GiphyMessages;
+			name = "Giphy Messages";
 			productName = GiphyMessages;
 			productReference = F98D14CE1B8AABC800F768AF /* GiphyMessages.app */;
 			productType = "com.apple.product-type.application";
@@ -167,7 +167,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F98D14E31B8AABC800F768AF /* PBXTargetDependency */,
+				F9A080021B8D835B0035E20C /* PBXTargetDependency */,
 			);
 			name = GiphyMessagesTests;
 			productName = GiphyMessagesTests;
@@ -205,7 +205,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F98D14CD1B8AABC700F768AF /* GiphyMessages */,
+				F98D14CD1B8AABC700F768AF /* Giphy Messages */,
 				F98D14E01B8AABC800F768AF /* GiphyMessagesTests */,
 			);
 		};
@@ -256,10 +256,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F98D14E31B8AABC800F768AF /* PBXTargetDependency */ = {
+		F9A080021B8D835B0035E20C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F98D14CD1B8AABC700F768AF /* GiphyMessages */;
-			targetProxy = F98D14E21B8AABC800F768AF /* PBXContainerItemProxy */;
+			target = F98D14CD1B8AABC700F768AF /* Giphy Messages */;
+			targetProxy = F9A080011B8D835B0035E20C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -361,7 +361,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GiphyMessages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Giphy Messages";
 			};
 			name = Debug;
 		};
@@ -372,7 +372,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = GiphyMessages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Giphy Messages";
 			};
 			name = Release;
 		};
@@ -392,7 +392,7 @@
 				INFOPLIST_FILE = GiphyMessagesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphyMessages.app/Contents/MacOS/GiphyMessages";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Giphy Messages.app/Contents/MacOS/Giphy Messages";
 			};
 			name = Debug;
 		};
@@ -408,7 +408,7 @@
 				INFOPLIST_FILE = GiphyMessagesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiphyMessages.app/Contents/MacOS/GiphyMessages";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Giphy Messages.app/Contents/MacOS/Giphy Messages";
 			};
 			name = Release;
 		};
@@ -424,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F98D14EB1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "GiphyMessages" */ = {
+		F98D14EB1B8AABC800F768AF /* Build configuration list for PBXNativeTarget "Giphy Messages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F98D14EC1B8AABC800F768AF /* Debug */,
