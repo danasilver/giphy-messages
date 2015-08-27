@@ -247,7 +247,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -r ${BUILT_PRODUCTS_DIR}/Giphy\\ Messages.app ${SRCROOT}/../Giphy\\ Messages.app";
+			shellScript = "rm -rf ${SRCROOT}/../Giphy\\ Messages.app\ncp -r ${BUILT_PRODUCTS_DIR}/Giphy\\ Messages.app ${SRCROOT}/../Giphy\\ Messages.app";
 		};
 /* End PBXShellScriptBuildPhase section */
 
