@@ -54,8 +54,8 @@
                         <action selector="openMessages:" target="-2" id="VIf-i1-4Rc"/>
                     </connections>
                 </button>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5p-b0-Rsg">
-                    <rect key="frame" x="545" y="-7" width="111" height="32"/>
+                <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5p-b0-Rsg">
+                    <rect key="frame" x="551" y="0.0" width="99" height="21"/>
                     <buttonCell key="cell" type="bevel" title="Author Link" bezelStyle="rounded" alignment="center" inset="2" id="Z8Q-kl-ZzG">
                         <behavior key="behavior" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
@@ -70,7 +70,7 @@
                 <constraint firstAttribute="centerX" secondItem="sRz-7I-D2I" secondAttribute="centerX" id="2IJ-p7-mHO"/>
                 <constraint firstItem="sjz-zq-aWf" firstAttribute="top" secondItem="tdi-YW-DBJ" secondAttribute="bottom" constant="-13" id="2gm-xv-D1S"/>
                 <constraint firstAttribute="centerX" secondItem="tdi-YW-DBJ" secondAttribute="centerX" id="AOn-LN-WNL"/>
-                <constraint firstItem="c9K-Hd-GKG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="10" id="L7U-sI-qzG"/>
+                <constraint firstItem="c9K-Hd-GKG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="13" id="L7U-sI-qzG"/>
                 <constraint firstItem="sRz-7I-D2I" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="10" id="NTb-8V-ebD"/>
                 <constraint firstItem="Xy5-PH-JIY" firstAttribute="top" secondItem="sRz-7I-D2I" secondAttribute="bottom" constant="15" id="fab-ft-Yym"/>
                 <constraint firstAttribute="centerX" secondItem="Xy5-PH-JIY" secondAttribute="centerX" id="g33-Ng-5e1"/>
