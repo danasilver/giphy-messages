@@ -10,17 +10,19 @@
 using terms from application "Messages"
 	on message sent theMessage for theChat with theText
 		set theChatId to (get id of theChat)
+        
+        considering case
+            if theMessage starts with "gif me" or theMessage starts with "giphy" then
+                try
+                    set theQuotedMessage to quoted form of theMessage
+                    set theQuotedChatId to quoted form of theChatId
+                    set theScript to "/Applications/Giphy\\ Messages.app/Contents/Resources/giphy.py"
 
-		if theMessage starts with "gif me" or theMessage starts with "giphy" then
-			try
-				set theQuotedMessage to quoted form of theMessage
-				set theQuotedChatId to quoted form of theChatId
-				set theScript to "/Applications/Giphy\\ Messages.app/Contents/Resources/giphy.py"
-
-				do shell script "python " & theScript & " " & theQuotedMessage & " " & theQuotedChatId & " &>/dev/null &"
-			on error err
-			end try
-		end if
+                    do shell script "python " & theScript & " " & theQuotedMessage & " " & theQuotedChatId & " &>/dev/null &"
+                    on error err
+                end try
+            end if
+        end considering
 
 		return theMessage
 	end message sent
