@@ -4,7 +4,7 @@
 
 ### Install
 
-0. Download [Giphy Messages.app]()
+0. Download and mount [Giphy Messages.dmg]()
 
 0. Move the app to your Applications folder
 
@@ -35,12 +35,8 @@ inside the app in the */Applications* directory. Change `theScript` in
 We distribute an app since it's the easiest way to make sure we can find
 *giphy.py*. AppleScript doesn't have the support to make and parse web requests.
 
-The app is build using [Platypus](http://www.sveinbjorn.org/platypus) with the
-profile *Giphy Messages.platypus*. You'll need to change the paths to reference
-your own installation to build locally.
-
 The dmg is generated with [create-dmg](https://github.com/andreyvit/create-dmg).
-Follow the installation instructions there then run `sh dmg.sh` to create
+Follow the installation instructions there then run `./dmg.sh` to create
 *Giphy Messages.dmg*.
 
 The multi-resolution *dmg-background.tiff* for the background of the dmg is
