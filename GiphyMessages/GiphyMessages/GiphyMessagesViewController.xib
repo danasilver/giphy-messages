@@ -56,8 +56,8 @@
                 </button>
                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5p-b0-Rsg">
                     <rect key="frame" x="545" y="-7" width="111" height="32"/>
-                    <buttonCell key="cell" type="push" title="Author Link" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="Z8Q-kl-ZzG">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                    <buttonCell key="cell" type="bevel" title="Author Link" bezelStyle="rounded" alignment="center" inset="2" id="Z8Q-kl-ZzG">
+                        <behavior key="behavior" lightByContents="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
