@@ -2,7 +2,7 @@
 
 test -f "Giphy Messages.dmg" && rm "Giphy Messages.dmg"
 
-../yoursway-create-dmg/create-dmg \
+../create-dmg/create-dmg \
 --volname "Giphy Messages" \
 --volicon "assets/Giphy Messages.icns" \
 --background "assets/dmg-background.tiff" \
