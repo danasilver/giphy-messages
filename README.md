@@ -4,7 +4,7 @@
 
 ### Install
 
-0. Download and mount [Giphy Messages.dmg]()
+0. Download and mount [Giphy Messages.dmg](https://github.com/danasilver/giphy-messages/releases/latest)
 
 0. Move the app to your Applications folder
 
